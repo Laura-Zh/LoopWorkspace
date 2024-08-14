@@ -288,6 +288,12 @@ jobs:
 
           # the final customization listed above CANNOT have a continuation character
           # more customizations can be pasted after this line
+
+          # LoopKit: File: code customization description
+          curl https://github.com/Laura-Zh/LoopKit/commit/e0eddd43e0360ad941129178752bd5508a95c640.patch | git apply -v --directory=LoopKit
+
+          # Loop: File: code customization description
+          curl https://github.com/Laura-Zh/Loop/commit/1cba0bde9eed6e7b9139b80df750314c85824a26.patch | git apply -v --directory=Loop
           
       # Patch Fastlane Match to not print tables
       - name: Patch Match Tables
