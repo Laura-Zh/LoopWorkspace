@@ -288,13 +288,7 @@ jobs:
 
           # the final customization listed above CANNOT have a continuation character
           # more customizations can be pasted after this line
-
-          # # Module: File: code customization description
-          curl https://github.com/Laura-Zh/Loop/commit/ee299de8a4b963af7c80d9bb854e94b76fd7e651.patch | git apply -v --directory=Module
-
-          # # Module: File: code customization description
-          curl https://github.com/Laura-Zh/LoopKit/commit/ea014d4f4e2160616bbcddc6fcfc70d4d5f1c4f2.patch | git apply -v --directory=Module
-     
+          
       # Patch Fastlane Match to not print tables
       - name: Patch Match Tables
         run: |
